@@ -106,3 +106,25 @@ hr{
     color: #AEAEAE;
 }
 /* course section end */
+/* Media Quaries start */
+@media screen and (max-width:668px) {
+    .container{
+        width: 100%;
+    }
+    .blogs, .players, .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blog, .player{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:668px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Media Quaries end */
